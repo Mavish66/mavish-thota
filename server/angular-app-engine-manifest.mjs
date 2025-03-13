@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/mavish',
+  basePath: '/mavish-thota',
   supportedLocales: {
   "en-US": ""
 },
