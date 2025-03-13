@@ -1,0 +1,16 @@
+<div class="container my-5">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let project of projects">
+        <div class="card h-100">
+          <img [src]="project.imageUrl" class="card-img-top" [alt]="project.title">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <a [href]="project.liveUrl" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

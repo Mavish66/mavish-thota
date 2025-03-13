@@ -1,0 +1,26 @@
+<section id="skills" class="py-5">
+    <div class="container  d-flex justify-content-center" style="height: 100vh;">
+    
+      <div class="row g-4">
+        <h2 class="text-center mt-5 ">Skills & Technologies</h2>
+        <div class="col-6 col-md-3" *ngFor="let skill of skills; index as i">
+          <div class="card text-center p-3 h-100 shadow-sm border-0">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+              <!-- Icon: bind prefix and icon class -->
+              <i
+                [ngClass]="[skill.prefix, skill.icon]"
+                [ngStyle]="{
+                  color: skill.color,
+                  fontSize: skill.fontSize
+                }"
+              ></i>
+  
+              <!-- Skill Name -->
+              <h5 class="card-title mt-3">{{ skill.name }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

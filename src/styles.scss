@@ -1,1 +1,112 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F8F9FA;
+  color: #6C757D;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* styles.css */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+
+h1, h2, h3, h4 {
+  color: #007BFF;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  border-radius: 8px;
+}
+
+.card {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+  color: #8e31ff;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #BB86FC;
+}
+
+body.dark-mode .card {
+  background-color: #1F1B24;
+  color: #E0E0E0;
+}
+
+body.dark-mode footer {
+  background-color: #1F1B24;
+  color: #E0E0E0;
+}
+
+/* Back to Top */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 1000;
+}
+
+.back-to-top.show {
+  display: block;
+}
+
+
+/* Smooth fade-in with slide animations */
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-fade-in-left {
+    animation: fadeInLeft 1s ease forwards;
+  }
+  
+  .animate-fade-in-right {
+    animation: fadeInRight 1s ease forwards;
+  }
+
+
+
+
+
+  
+  
